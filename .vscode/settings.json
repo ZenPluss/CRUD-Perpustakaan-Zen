@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "d:\\project_2024\\DBC_JAVA\\mysql-connector-j-8.2.0\\mysql-connector-j-8.2.0.jar",
+        "c:\\Users\\faris\\Downloads\\flatlaf-3.3.jar"
+    ]
+}
