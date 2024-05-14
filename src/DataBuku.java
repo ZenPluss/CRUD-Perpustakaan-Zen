@@ -96,7 +96,7 @@ public class DataBuku extends JFrame {
         panelKiri.add(sudahDiKembalikanRadioButton);
         panelKiri.add(tambahButton);
         panelKiri.add(resetButton, BorderLayout.PAGE_END);
-        panelKiri.setBackground(new Color(150, 0, 75));
+        panelKiri.setBackground(new Color(60, 20, 75));
         //code panel kiri
 
         JPanel panelKanan = new JPanel();
@@ -104,7 +104,7 @@ public class DataBuku extends JFrame {
         panelKanan.setLayout(new BoxLayout(panelKanan, BoxLayout.Y_AXIS));
         panelKanan.add(new JScrollPane(dataJList), BorderLayout.CENTER);
         panelKanan.add(hapusButton, BorderLayout.CENTER);
-        panelKanan.setBackground(new Color(150, 0, 75));
+        panelKanan.setBackground(new Color(60, 20, 75));
         //code panel kanan
 
 
@@ -112,11 +112,13 @@ public class DataBuku extends JFrame {
         add(panelKanan, BorderLayout.CENTER);
     }
 
-    private Object resetData() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'resetData'");
+    private void resetData() 
+    {
+        // Clear the title and content fields
+        judulTextField.setText("");
+        isiTextArea.setText("");
     }
-
+    
     private void tampilkanCatatan()
     {
         int index = dataJList.getSelectedIndex();

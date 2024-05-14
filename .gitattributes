@@ -1,0 +1,7 @@
+# Handle line endings for all text files
+* text=auto
+
+# Specific rules for certain file types
+*.java text eol=lf
+*.md text eol=lf
+*.json text eol=lf
