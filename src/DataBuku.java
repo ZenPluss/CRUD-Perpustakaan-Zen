@@ -9,7 +9,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
-
 import java.net.URL;
 
 
@@ -31,7 +30,7 @@ public class DataBuku extends JFrame {
         setTitle("Perpustakaan App");
         //setSize(280, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(800 , 400);
+        setSize(600 , 400);
 
         setLocationRelativeTo(null);
 
@@ -62,12 +61,15 @@ public class DataBuku extends JFrame {
         judulTextField = new JTextField();
         isiTextArea = new JTextField();
         
-
+        
         JButton tambahButton = new JButton("Tambah Data");
         tambahButton.addActionListener(e -> tambahData());
 
         JButton hapusButton = new JButton("Hapus Data");
         hapusButton.addActionListener(e -> hapusData());
+
+        JButton resetButton = new JButton("Reset data");
+        resetButton.addActionListener(e -> resetData());
 
         setLayout(new BorderLayout());
 
@@ -93,6 +95,7 @@ public class DataBuku extends JFrame {
         panelKiri.add(sedangDiPinjamRadioButton);
         panelKiri.add(sudahDiKembalikanRadioButton);
         panelKiri.add(tambahButton);
+        panelKiri.add(resetButton, BorderLayout.PAGE_END);
         panelKiri.setBackground(new Color(150, 0, 75));
         //code panel kiri
 
@@ -107,6 +110,11 @@ public class DataBuku extends JFrame {
 
         add(panelKiri, BorderLayout.WEST);
         add(panelKanan, BorderLayout.CENTER);
+    }
+
+    private Object resetData() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'resetData'");
     }
 
     private void tampilkanCatatan()
