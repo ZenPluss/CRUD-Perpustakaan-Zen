@@ -50,7 +50,7 @@ public class DataBuku extends JFrame {
 
         setResizable(false);
 
-        getContentPane().setBackground(new Color(00, 50, 100)); 
+        getContentPane().setBackground(new Color(0, 0, 0)); 
 
 
         listModel = new DefaultListModel<>();
@@ -96,7 +96,7 @@ public class DataBuku extends JFrame {
         panelKiri.add(sudahDiKembalikanRadioButton);
         panelKiri.add(tambahButton);
         panelKiri.add(resetButton, BorderLayout.PAGE_END);
-        panelKiri.setBackground(new Color(60, 20, 75));
+        panelKiri.setBackground(new Color(0, 0, 0));
         //code panel kiri
 
         JPanel panelKanan = new JPanel();
@@ -104,7 +104,7 @@ public class DataBuku extends JFrame {
         panelKanan.setLayout(new BoxLayout(panelKanan, BoxLayout.Y_AXIS));
         panelKanan.add(new JScrollPane(dataJList), BorderLayout.CENTER);
         panelKanan.add(hapusButton, BorderLayout.CENTER);
-        panelKanan.setBackground(new Color(60, 20, 75));
+        panelKanan.setBackground(new Color(0, 0, 0));
         //code panel kanan
 
 
